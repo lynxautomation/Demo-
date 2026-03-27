@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Meyer & Sohn – Chatbot</title>
+<title>Meyer & Sohn – Digitaler Kundenberater</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -413,7 +413,7 @@
   <div class="wg-header">
     <div class="wg-logo">MS</div>
     <div class="wg-header-text">
-      <div class="wg-name">Meyer &amp; Sohn Assistent</div>
+      <div class="wg-name">Meyer &amp; Sohn AI Assistent</div>
       <div class="wg-subtitle">Sanierungsberatung &amp; Anfragen</div>
     </div>
     <div class="wg-status"><div class="wg-dot"></div>Online</div>
@@ -438,7 +438,7 @@
     </button>
   </div>
 
-  <div class="wg-footer">Meyer &amp; Sohn Sanierungen GmbH</div>
+  <div class="wg-footer">Meyer &amp; Sohn AI Assitent- Powered By LynxAI</div>
 </div>
 
 <script>
@@ -637,7 +637,7 @@ function showLeadForm() {
       const data = await res.json();
       if (data.success) {
         wrap.innerHTML = '<div style="padding:14px 12px;font-size:13px;color:#4a7c59;background:#edf7f1;border-radius:12px;border:1px solid #b6dfc6;">&#10003; Vielen Dank! Wir melden uns schnellstmoeglich bei Ihnen.</div>';
-        appendMsg('bot', 'Ihre Anfrage ist bei uns eingegangen. Thomas Meyer oder ein Kollege wird sich in Kuerze bei Ihnen melden!');
+        appendMsg('bot', 'Ihre Anfrage ist bei uns eingegangen. Thomas Meyer oder ein Kollege wird sich in Kürze bei Ihnen melden!');
       } else {
         throw new Error(data.error || 'Unbekannter Fehler');
       }
